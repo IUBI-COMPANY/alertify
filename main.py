@@ -1,6 +1,7 @@
 from flask import Flask, Response
 import json
 from clientScraper.searchResultsProduct import searchProduct
+from clientScraper.searchProductDetailsById import showProductDetails
 
 app = Flask(__name__)
 
@@ -16,7 +17,9 @@ def findProducts(product_name):
 
 @app.route("/products/item/<product_id>")
 def productDetails(product_id):
-    return product_id
+    data = showProductDetails(product_id)
+    jsonData = json.dumps(data, ensure_ascii=False, indent=2)
+    return Response(jsonData, mimetype='application/json; charset=utf-8')
 
 
 
