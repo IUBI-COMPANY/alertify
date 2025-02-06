@@ -1,4 +1,10 @@
+# Ignorar archivos y carpetas de caché de Python
+__pycache__/
+*.pyc
+
+venv/
 .venv
+
 .idea
 node_modules
 lib
