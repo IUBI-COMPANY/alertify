@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
-from utils.characteristicsProduct import characteristicsProduct
-import requests, json
+from src.utils.characteristicsProduct import characteristicsProduct
 
+import requests
 
 def showProductDetails(productID):
 
