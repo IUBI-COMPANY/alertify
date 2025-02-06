@@ -2,10 +2,11 @@ import sys
 import os
 from firebase_admin import initialize_app
 from firebase_functions import https_fn
-from src.api.main import create_app
+from dotenv import load_dotenv
+load_dotenv()
 
 sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
-
+from src.api.main import create_app
 
 initialize_app()
 
@@ -18,4 +19,5 @@ def articles(req: https_fn.Request) -> https_fn.Response:
 
 # run local mode
 if __name__ == "__main__":
-    app.run(host="127.0.0.1", port=5000, debug=True)
+    if os.getenv("FLASK_ENV") == "development":
+        app.run(host="127.0.0.1", port=5000, debug=True)
