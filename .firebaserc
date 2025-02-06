@@ -1,5 +1,27 @@
 {
   "projects": {
     "default": "alertify-prod"
-  }
+  },
+  "targets": {
+    "alertify-prod": {
+      "hosting": {
+        "app": [
+          "alertify-prod"
+        ],
+         "api": [
+           "api-alertify"
+         ]
+      }
+    },
+    "alertify-dev": {
+      "hosting": {
+        "app": [
+          "alertify-dev"
+        ],
+        "api": [
+           "api-alertify-dev"
+        ]
+      }
+    }
+  },
 }

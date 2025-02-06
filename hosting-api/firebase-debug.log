@@ -1,0 +1,134 @@
+[debug] [2025-02-06T19:57:57.938Z] ----------------------------------------------------------------------
+[debug] [2025-02-06T19:57:57.938Z] Command:       /Users/noel/.nvm/versions/node/v18.20.1/bin/node /opt/homebrew/bin/firebase deploy --only hosting:api -P default
+[debug] [2025-02-06T19:57:57.939Z] CLI Version:   13.22.0
+[debug] [2025-02-06T19:57:57.939Z] Platform:      darwin
+[debug] [2025-02-06T19:57:57.939Z] Node Version:  v18.20.1
+[debug] [2025-02-06T19:57:57.939Z] Time:          Thu Feb 06 2025 14:57:57 GMT-0500 (Peru Standard Time)
+[debug] [2025-02-06T19:57:57.940Z] ----------------------------------------------------------------------
+[debug] 
+[warn] ⚠  JSON error trying to load /Users/noel/Desktop/IUBI/alertify/.firebaserc 
+[debug] [2025-02-06T19:57:57.974Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-02-06T19:57:57.974Z] > authorizing via signed-in user (admin@iubi.pe)
+[debug] [2025-02-06T19:57:57.974Z] [iam] checking project default for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-02-06T19:57:57.974Z] Checked if tokens are valid: true, expires at: 1738874734740
+[debug] [2025-02-06T19:57:57.975Z] Checked if tokens are valid: true, expires at: 1738874734740
+[debug] [2025-02-06T19:57:57.975Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/default:testIamPermissions [none]
+[debug] [2025-02-06T19:57:57.975Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/default:testIamPermissions x-goog-quota-user=projects/default
+[debug] [2025-02-06T19:57:57.975Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/default:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-02-06T19:57:59.263Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/default:testIamPermissions 200
+[debug] [2025-02-06T19:57:59.264Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/default:testIamPermissions {}
+[debug] [2025-02-06T19:57:59.264Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project default:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2025-02-06T19:57:59.265Z] Checked if tokens are valid: true, expires at: 1738874734740
+[debug] [2025-02-06T19:57:59.265Z] Checked if tokens are valid: true, expires at: 1738874734740
+[debug] [2025-02-06T19:57:59.266Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/default [none]
+[debug] [2025-02-06T19:57:59.881Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/default 403
+[debug] [2025-02-06T19:57:59.882Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/default {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2025-02-06T19:57:59.882Z] HTTP Error: 403, The caller does not have permission
+[debug] [2025-02-06T19:58:00.058Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (/opt/homebrew/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/opt/homebrew/lib/node_modules/firebase-tools/lib/apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project default. Please make sure the project exists and your account has permission to access it.
+[debug] [2025-02-06T19:58:14.958Z] ----------------------------------------------------------------------
+[debug] [2025-02-06T19:58:14.959Z] Command:       /Users/noel/.nvm/versions/node/v18.20.1/bin/node /opt/homebrew/bin/firebase deploy --only hosting:api -P default
+[debug] [2025-02-06T19:58:14.959Z] CLI Version:   13.22.0
+[debug] [2025-02-06T19:58:14.959Z] Platform:      darwin
+[debug] [2025-02-06T19:58:14.959Z] Node Version:  v18.20.1
+[debug] [2025-02-06T19:58:14.960Z] Time:          Thu Feb 06 2025 14:58:14 GMT-0500 (Peru Standard Time)
+[debug] [2025-02-06T19:58:14.960Z] ----------------------------------------------------------------------
+[debug] 
+[warn] ⚠  JSON error trying to load /Users/noel/Desktop/IUBI/alertify/.firebaserc 
+[debug] [2025-02-06T19:58:14.992Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-02-06T19:58:14.993Z] > authorizing via signed-in user (admin@iubi.pe)
+[debug] [2025-02-06T19:58:14.993Z] [iam] checking project default for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-02-06T19:58:14.993Z] Checked if tokens are valid: true, expires at: 1738874734740
+[debug] [2025-02-06T19:58:14.993Z] Checked if tokens are valid: true, expires at: 1738874734740
+[debug] [2025-02-06T19:58:14.994Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/default:testIamPermissions [none]
+[debug] [2025-02-06T19:58:14.994Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/default:testIamPermissions x-goog-quota-user=projects/default
+[debug] [2025-02-06T19:58:14.994Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/default:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-02-06T19:58:16.190Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/default:testIamPermissions 200
+[debug] [2025-02-06T19:58:16.190Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/default:testIamPermissions {}
+[debug] [2025-02-06T19:58:16.190Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project default:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2025-02-06T19:58:16.191Z] Checked if tokens are valid: true, expires at: 1738874734740
+[debug] [2025-02-06T19:58:16.191Z] Checked if tokens are valid: true, expires at: 1738874734740
+[debug] [2025-02-06T19:58:16.192Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/default [none]
+[debug] [2025-02-06T19:58:16.591Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/default 403
+[debug] [2025-02-06T19:58:16.591Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/default {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2025-02-06T19:58:16.592Z] HTTP Error: 403, The caller does not have permission
+[debug] [2025-02-06T19:58:16.769Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (/opt/homebrew/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/opt/homebrew/lib/node_modules/firebase-tools/lib/apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project default. Please make sure the project exists and your account has permission to access it.
+[debug] [2025-02-06T19:58:41.319Z] ----------------------------------------------------------------------
+[debug] [2025-02-06T19:58:41.320Z] Command:       /Users/noel/.nvm/versions/node/v18.20.1/bin/node /opt/homebrew/bin/firebase deploy --only hosting --debug
+[debug] [2025-02-06T19:58:41.320Z] CLI Version:   13.22.0
+[debug] [2025-02-06T19:58:41.320Z] Platform:      darwin
+[debug] [2025-02-06T19:58:41.320Z] Node Version:  v18.20.1
+[debug] [2025-02-06T19:58:41.325Z] Time:          Thu Feb 06 2025 14:58:41 GMT-0500 (Peru Standard Time)
+[debug] [2025-02-06T19:58:41.325Z] ----------------------------------------------------------------------
+[debug] 
+[warn] ⚠  JSON error trying to load /Users/noel/Desktop/IUBI/alertify/.firebaserc 
+[debug] [2025-02-06T19:58:41.358Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-02-06T19:58:41.358Z] > authorizing via signed-in user (admin@iubi.pe)
+[debug] [2025-02-06T19:58:41.358Z] [iam] checking project alertify-prod for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-02-06T19:58:41.359Z] Checked if tokens are valid: true, expires at: 1738874734740
+[debug] [2025-02-06T19:58:41.359Z] Checked if tokens are valid: true, expires at: 1738874734740
+[debug] [2025-02-06T19:58:41.359Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/alertify-prod:testIamPermissions [none]
+[debug] [2025-02-06T19:58:41.359Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/alertify-prod:testIamPermissions x-goog-quota-user=projects/alertify-prod
+[debug] [2025-02-06T19:58:41.359Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/alertify-prod:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-02-06T19:59:01.419Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/alertify-prod:testIamPermissions 200
+[debug] [2025-02-06T19:59:01.420Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/alertify-prod:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-02-06T19:59:01.421Z] Checked if tokens are valid: true, expires at: 1738874734740
+[debug] [2025-02-06T19:59:01.421Z] Checked if tokens are valid: true, expires at: 1738874734740
+[debug] [2025-02-06T19:59:01.422Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/alertify-prod [none]
+[debug] [2025-02-06T19:59:01.927Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/alertify-prod 200
+[debug] [2025-02-06T19:59:01.927Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/alertify-prod {"projectId":"alertify-prod","projectNumber":"371530571653","displayName":"alertify","name":"projects/alertify-prod","resources":{"hostingSite":"alertify-prod"},"state":"ACTIVE","etag":"1_82623576-3c62-4409-84e9-1066d77c60fd"}
+[debug] [2025-02-06T19:59:01.931Z] Specified "public" directory "packages/hosting/build" does not exist; Deploy to Hosting site "app" may fail or be empty.
+[error] 
+[error] Error: Deploy target app not configured for project alertify-prod. Configure with:
+
+  firebase target:apply hosting app <resources...>
+[debug] [2025-02-06T19:59:09.834Z] ----------------------------------------------------------------------
+[debug] [2025-02-06T19:59:09.835Z] Command:       /Users/noel/.nvm/versions/node/v18.20.1/bin/node /opt/homebrew/bin/firebase deploy --only hosting:api -P default
+[debug] [2025-02-06T19:59:09.835Z] CLI Version:   13.22.0
+[debug] [2025-02-06T19:59:09.835Z] Platform:      darwin
+[debug] [2025-02-06T19:59:09.835Z] Node Version:  v18.20.1
+[debug] [2025-02-06T19:59:09.836Z] Time:          Thu Feb 06 2025 14:59:09 GMT-0500 (Peru Standard Time)
+[debug] [2025-02-06T19:59:09.836Z] ----------------------------------------------------------------------
+[debug] 
+[warn] ⚠  JSON error trying to load /Users/noel/Desktop/IUBI/alertify/.firebaserc 
+[debug] [2025-02-06T19:59:09.869Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-02-06T19:59:09.869Z] > authorizing via signed-in user (admin@iubi.pe)
+[debug] [2025-02-06T19:59:09.869Z] [iam] checking project default for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-02-06T19:59:09.869Z] Checked if tokens are valid: true, expires at: 1738874734740
+[debug] [2025-02-06T19:59:09.869Z] Checked if tokens are valid: true, expires at: 1738874734740
+[debug] [2025-02-06T19:59:09.870Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/default:testIamPermissions [none]
+[debug] [2025-02-06T19:59:09.870Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/default:testIamPermissions x-goog-quota-user=projects/default
+[debug] [2025-02-06T19:59:09.870Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/default:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-02-06T19:59:11.152Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/default:testIamPermissions 200
+[debug] [2025-02-06T19:59:11.152Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/default:testIamPermissions {}
+[debug] [2025-02-06T19:59:11.152Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project default:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2025-02-06T19:59:11.153Z] Checked if tokens are valid: true, expires at: 1738874734740
+[debug] [2025-02-06T19:59:11.153Z] Checked if tokens are valid: true, expires at: 1738874734740
+[debug] [2025-02-06T19:59:11.154Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/default [none]
+[debug] [2025-02-06T19:59:11.856Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/default 403
+[debug] [2025-02-06T19:59:11.856Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/default {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2025-02-06T19:59:11.856Z] HTTP Error: 403, The caller does not have permission
+[debug] [2025-02-06T19:59:12.023Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (/opt/homebrew/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/opt/homebrew/lib/node_modules/firebase-tools/lib/apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project default. Please make sure the project exists and your account has permission to access it.
