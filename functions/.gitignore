@@ -1,4 +1,11 @@
+# Ignorar entorno virtual
+venv/
 .venv
 /venv
+
+# Ignorar configuración de PyCharm
 .idea
+
+# Ignorar módulos de Node.js
 node_modules
+lib
