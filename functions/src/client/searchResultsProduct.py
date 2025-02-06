@@ -5,11 +5,9 @@ from bs4 import BeautifulSoup
 def searchProduct(productName):
 
     #URL EBAY
-
     url = f"https://www.ebay.com/sch/i.html?_nkw={productName}&_sacat=0&_from=R40&_dmd=2&_sop=10&_ipg=120"
 
     #Fetching URL
-
     fetchUrl = requests.get(url)
     elementsFetchUrl = BeautifulSoup(fetchUrl.text, 'html.parser')
 

@@ -3,7 +3,7 @@ from src.api.routes import register_routes
 
 app = Flask(__name__)
 
-# Registrar rutas
+# routes
 register_routes(app)
 
 def create_app():
