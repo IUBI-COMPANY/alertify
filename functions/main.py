@@ -3,11 +3,11 @@ import os
 from firebase_admin import initialize_app
 from firebase_functions import https_fn
 from dotenv import load_dotenv
-load_dotenv()
 
 sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
 from src.api.main import create_app
 
+load_dotenv()
 initialize_app()
 
 app = create_app()
